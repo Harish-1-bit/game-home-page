@@ -1,0 +1,121 @@
+ @import url('https://fonts.cdnfonts.com/css/cubicfive');
+ @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }}
+  @keyframes blinker {
+  50% {
+    opacity: 20%;
+  }}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: 'CubicFive10', sans-serif;
+  color: white;
+}
+
+body{
+  height: 100vh;
+  background-image: url("https://img.freepik.com/premium-photo/pixel-art-old-video-game-console-landscape-background-retro-style-8-bit-game-ai_985124-2227.jpg");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav{
+  background-color: #313131;
+  border-bottom:2px solid #0ae4e9;
+  box-shadow: 0px 11px 28px 0px #0ae4e9;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  justify-content: space-between;
+  div{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+  }
+  P{
+    color: #0ae4e9;
+  }
+}
+section{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column  ;
+}
+.box{
+  padding-top: 5px;
+  font-size: 1.5rem;
+  height: 70px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px 0px #F35C3A;
+  border: 2px solid #F35C3A;
+  text-align: center;
+  background-color: #313131e7;
+  color: #0ae4e9;
+  transition: all 0.4s ease-in-out;
+}
+  
+  .box:hover{
+    width: 300px;
+    height: 170px;
+    padding: 10px;
+    transform: scale(1.7);
+    .player1{
+    animation: typing 3s steps(40, end) forwards;
+    font-size: 6px;
+    animation-delay: 0.5s;
+    opacity: 1;
+    font-size: 16px;
+    width: 0;
+    white-space: nowrap;
+	overflow: hidden;
+    }
+    .player4{
+    animation: typing 3s steps(40, end) forwards;
+    font-size: 6px;
+    animation-delay: 8.8s;
+    opacity: 1;
+    font-size: 12px;
+    width: 0px;
+    white-space: nowrap;
+	overflow: hidden;
+    }
+    .player2{
+    animation: typing 3s steps(40, end) forwards;
+    font-size: 6px;
+    animation-delay: 3.2s;
+    opacity: 1;
+    font-size: 16px;
+    width: 0;
+    white-space: nowrap;
+	overflow: hidden;
+    }
+    .player3{
+    animation: typing 3.5s steps(40, end) forwards;
+    font-size: 12px;
+    animation-delay: 5.2s;
+    opacity: 1;
+    font-size: 12px;
+    width: 0;
+    white-space: nowrap;
+	overflow: hidden;
+    }
+   
+  }
+  .hid{
+    color: #0ae4e9;
+    text-align: left;
+    line-height: 25px;
+    opacity: 0;
+  }
